@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Analytics Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dynamic Analytics Dashboard</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Total Inspections</h2>
+            <p id="total-inspections">0</p>
+        </div>
+        <div class="card">
+            <h2>Defective Items</h2>
+            <p id="defective-items">0</p>
+        </div>
+        <div class="card">
+            <h2>Efficiency Rate</h2>
+            <p id="efficiency-rate">0%</p>
+        </div>
+        <div class="graph-container">
+            <h2>Inspection Trends</h2>
+            <canvas id="bar-chart" width="400" height="200"></canvas>
+        </div>
+        <div class="graph-container">
+            <h2>Defects by Type</h2>
+            <canvas id="pie-chart" width="400" height="200"></canvas>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 InspecturaX</p>
+    </footer>
+
+    <!-- Firebase and Chart.js Libraries -->
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
